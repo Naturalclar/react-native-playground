@@ -7,7 +7,9 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "prepare": "cd ios && pod install"
+    "prepare": "cd ios && pod install",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "react": "16.9.0",
@@ -22,16 +24,26 @@
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
+    "@babel/preset-typescript": "^7.6.0",
     "@babel/runtime": "^7.6.2",
     "@react-native-community/eslint-config": "^0.0.5",
-    "@types/jest": "^24.0.18",
+    "@storybook/addon-actions": "^5.2.5",
+    "@storybook/addon-links": "^5.2.5",
+    "@storybook/addon-options": "^5.2.5",
+    "@storybook/addon-viewport": "^5.2.5",
+    "@storybook/addons": "^5.2.5",
+    "@storybook/react": "^5.2.5",
+    "@types/jest": "^24.0.19",
     "@types/react": "16.9.0",
     "@types/react-native": "^0.60.17",
     "@types/react-native-vector-icons": "^6.4.4",
     "@types/react-test-renderer": "16.9.0",
     "babel-jest": "^24.9.0",
+    "babel-loader": "^8.0.6",
     "jest": "^24.9.0",
     "metro-react-native-babel-preset": "^0.56.0",
+    "react-dom": "^16.10.2",
+    "react-native-web": "^0.11.7",
     "react-test-renderer": "16.9.0",
     "typescript": "^3.6.3"
   },
