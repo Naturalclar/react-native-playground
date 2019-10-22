@@ -9,8 +9,8 @@
  */
 
 import React from 'react';
-import {StyleSheet, ScrollView, View, Text} from 'react-native';
-
+import {StyleSheet, ScrollView, View, Text, Linking} from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome';
 import {
   Header,
   LearnMoreLinks,
@@ -19,26 +19,35 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+const repoUrl = 'https://github.com/Naturalclar/react-native-playground';
+
 export const Example = () => {
   const usingHermes =
     typeof HermesInternal === 'object' && HermesInternal !== null;
   return (
-    <ScrollView
-      contentInsetAdjustmentBehavior="automatic"
-      style={styles.scrollView}>
+    <ScrollView contentInsetAdjustmentBehavior="automatic">
       <Header />
       {!usingHermes ? null : (
         <View style={styles.engine}>
           <Text style={styles.footer}>Engine: Hermes</Text>
         </View>
       )}
+
       <View style={styles.body}>
         <View style={styles.sectionContainer}>
-          <Text style={styles.sectionTitle}>Step One</Text>
+          <Text style={styles.sectionTitle}>React Native Playground</Text>
           <Text style={styles.sectionDescription}>
-            Edit <Text style={styles.highlight}>Example.tsx</Text> to change
-            this screen and then come back to see your edits.
+            Playground repository to try out different react-native repositories
           </Text>
+          <Icon.Button
+            name="github"
+            color="white"
+            backgroundColor="black"
+            onPress={() => {
+              Linking.openURL(repoUrl);
+            }}>
+            See on Github
+          </Icon.Button>
         </View>
         <View style={styles.sectionContainer}>
           <Text style={styles.sectionTitle}>See Your Changes</Text>
@@ -65,9 +74,6 @@ export const Example = () => {
 };
 
 const styles = StyleSheet.create({
-  scrollView: {
-    backgroundColor: 'red',
-  },
   engine: {
     position: 'absolute',
     right: 0,
