@@ -2097,6 +2097,11 @@
     eslint-plugin-react-native "3.6.0"
     prettier "1.16.4"
 
+"@react-native-community/progress-bar-android@1.0.1-beta.3":
+  version "1.0.1-beta.3"
+  resolved "https://registry.yarnpkg.com/@react-native-community/progress-bar-android/-/progress-bar-android-1.0.1-beta.3.tgz#db92e197e52b130df97bf3b0be1f61211ad65c39"
+  integrity sha512-lcz1GIhWnGbKgBJbg8aYqm1GUjvPSViAITpYqotvwKOe2g80r2cm4SDxRfchdAIxjZcuBEeRGo6e6cxOm6jlbA==
+
 "@react-navigation/core@^3.5.1":
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/@react-navigation/core/-/core-3.5.1.tgz#7a2339fca3496979305fb3a8ab88c2ca8d8c214d"

@@ -9,17 +9,15 @@
  */
 
 import React from 'react';
-import {StyleSheet, ScrollView, View, Text, Linking} from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import {StyleSheet, ScrollView, View} from 'react-native';
+
 import {
   Header,
   LearnMoreLinks,
   Colors,
-  DebugInstructions,
-  ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-const repoUrl = 'https://github.com/Naturalclar/react-native-playground';
+import {ProgressBarAndroid} from '@react-native-community/progress-bar-android';
 
 export const Example = () => {
   const usingHermes =
@@ -27,46 +25,14 @@ export const Example = () => {
   return (
     <ScrollView contentInsetAdjustmentBehavior="automatic">
       <Header />
-      {!usingHermes ? null : (
-        <View style={styles.engine}>
-          <Text style={styles.footer}>Engine: Hermes</Text>
-        </View>
-      )}
-
+      {!usingHermes ? null : <View style={styles.engine} />}
+      <ProgressBarAndroid
+        styleAttr="Horizontal"
+        progress={75}
+        color="red"
+        indeterminate
+      />
       <View style={styles.body}>
-        <View style={styles.sectionContainer}>
-          <Text style={styles.sectionTitle}>React Native Playground</Text>
-          <Text style={styles.sectionDescription}>
-            Playground repository to try out different react-native repositories
-          </Text>
-          <Icon.Button
-            name="github"
-            color="white"
-            backgroundColor="black"
-            onPress={() => {
-              Linking.openURL(repoUrl);
-            }}>
-            See on Github
-          </Icon.Button>
-        </View>
-        <View style={styles.sectionContainer}>
-          <Text style={styles.sectionTitle}>See Your Changes</Text>
-          <Text style={styles.sectionDescription}>
-            <ReloadInstructions />
-          </Text>
-        </View>
-        <View style={styles.sectionContainer}>
-          <Text style={styles.sectionTitle}>Debug</Text>
-          <Text style={styles.sectionDescription}>
-            <DebugInstructions />
-          </Text>
-        </View>
-        <View style={styles.sectionContainer}>
-          <Text style={styles.sectionTitle}>Learn More</Text>
-          <Text style={styles.sectionDescription}>
-            Read the docs to discover what to do next:
-          </Text>
-        </View>
         <LearnMoreLinks />
       </View>
     </ScrollView>
