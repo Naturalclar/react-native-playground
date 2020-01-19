@@ -2097,6 +2097,11 @@
     eslint-plugin-react-native "3.6.0"
     prettier "1.16.4"
 
+"@react-native-community/segmented-control@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@react-native-community/segmented-control/-/segmented-control-1.1.0.tgz#0f86f1ca96e9a0dffef9bd251b289a64ad4d8dea"
+  integrity sha512-iLtq2WGXvCwsbSnlYv4fqZpgDZUXAe5f6VGNEyRnn4kbHmEWuQMovT0AkJ6Uu3Qb51y9rbhb74KwALdht5bTLQ==
+
 "@react-navigation/core@^3.5.1":
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/@react-navigation/core/-/core-3.5.1.tgz#7a2339fca3496979305fb3a8ab88c2ca8d8c214d"

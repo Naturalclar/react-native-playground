@@ -8,9 +8,10 @@
  * @format
  */
 
-import React from 'react';
+import React, {useState} from 'react';
 import {StyleSheet, ScrollView, View, Text, Linking} from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import SegmentedControlIOS from '@react-native-community/segmented-control';
 import {
   Header,
   LearnMoreLinks,
@@ -22,6 +23,7 @@ import {
 const repoUrl = 'https://github.com/Naturalclar/react-native-playground';
 
 export const Example = () => {
+  const [index, setIndex] = useState(0);
   const usingHermes =
     typeof HermesInternal === 'object' && HermesInternal !== null;
   return (
@@ -32,7 +34,16 @@ export const Example = () => {
           <Text style={styles.footer}>Engine: Hermes</Text>
         </View>
       )}
-
+      <SegmentedControlIOS
+        values={['One', 'Two']}
+        selectedIndex={index}
+        onChange={event => {
+          setIndex(event.nativeEvent.selectedSegmentIndex);
+        }}
+        tintColor="red"
+        textColor="blue"
+        backgroundColor="green"
+      />
       <View style={styles.body}>
         <View style={styles.sectionContainer}>
           <Text style={styles.sectionTitle}>React Native Playground</Text>
