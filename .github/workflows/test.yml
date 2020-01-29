@@ -27,7 +27,7 @@ jobs:
       - name: Lint
         run: yarn lint
   type-check:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
 
     strategy:
       matrix:
