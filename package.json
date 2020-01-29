@@ -23,14 +23,13 @@
     "react-native-vector-icons": "^6.6.0",
     "react-navigation": "^4.0.10",
     "react-navigation-stack": "^1.10.2",
-    "react-navigation-tabs": "^2.5.6",
-    "@react-native-community/progress-view":"1.0.0"
+    "react-navigation-tabs": "^2.5.6"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
     "@babel/preset-typescript": "^7.6.0",
     "@babel/runtime": "^7.6.2",
-    "@react-native-community/eslint-config": "^0.0.5",
+    "@react-native-community/eslint-config": "^0.0.7",
     "@storybook/addon-actions": "^5.2.8",
     "@storybook/addon-links": "^5.2.8",
     "@storybook/addon-options": "^5.2.8",
@@ -39,7 +38,7 @@
     "@storybook/react": "^5.2.8",
     "@types/jest": "^24.0.19",
     "@types/react": "16.9.0",
-    "@types/react-native": "^0.60.17",
+    "@types/react-native": "0.61.7",
     "@types/react-native-vector-icons": "^6.4.4",
     "@types/react-test-renderer": "16.9.0",
     "babel-jest": "^24.9.0",
