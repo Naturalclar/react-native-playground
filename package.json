@@ -14,7 +14,6 @@
     "type-check":"tsc --noEmit"
   },
   "dependencies": {
-    "@react-native-community/push-notification-ios": "^1.0.4",
     "react": "16.9.0",
     "react-native": "0.61.5",
     "react-native-gesture-handler": "^1.4.1",
@@ -37,7 +36,6 @@
     "@storybook/addons": "^5.2.8",
     "@storybook/react": "^5.2.8",
     "@types/jest": "^24.0.19",
-    "@types/react": "16.9.0",
     "@types/react-native": "0.61.7",
     "@types/react-native-vector-icons": "^6.4.4",
     "@types/react-test-renderer": "16.9.0",
