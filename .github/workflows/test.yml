@@ -26,7 +26,6 @@ jobs:
             --frozen-lockfile
       - name: Lint
         run: yarn lint
-jobs:
   type-check:
     runs-on: ubuntu-latest
 
