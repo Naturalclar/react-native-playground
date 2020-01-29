@@ -8,20 +8,12 @@
  * @format
  */
 
-import React, {useEffect} from 'react';
-import {StatusBar, Alert} from 'react-native';
+import React from 'react';
+import {StatusBar} from 'react-native';
 
 import {Navigator} from './Navigation';
-import PushNotificationIOS from '@react-native-community/push-notification-ios';
 
 const App = () => {
-  const onRegister = (token: string) => {
-    Alert.alert('Device Registered', `Token: ${token}`);
-  };
-  useEffect(() => {
-    PushNotificationIOS.addEventListener('register', onRegister);
-    return PushNotificationIOS.removeEventListener('register', onRegister);
-  });
   return (
     <>
       <StatusBar barStyle="dark-content" />
