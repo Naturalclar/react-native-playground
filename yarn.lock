@@ -2104,6 +2104,11 @@
   resolved "https://registry.yarnpkg.com/@react-native-community/eslint-plugin/-/eslint-plugin-1.0.0.tgz#ae9a430f2c5795debca491f15a989fce86ea75a0"
   integrity sha512-GLhSN8dRt4lpixPQh+8prSCy6PYk/MT/mvji/ojAd5yshowDo6HFsimCSTD/uWAdjpUq91XK9tVdTNWfGRlKQA==
 
+"@react-native-community/toolbar-android@0.1.0-rc.0":
+  version "0.1.0-rc.0"
+  resolved "https://registry.yarnpkg.com/@react-native-community/toolbar-android/-/toolbar-android-0.1.0-rc.0.tgz#ce8e297f9e7c3aec2d197a44c53e882b5e112a5e"
+  integrity sha512-OxLTiaRGSxoqD+85MXCnLyFxu9210pEW2aTwxASsaVaulWdDuG15QhWarNHJHjDZtsUtOFe9XIJkWdYHRo8tdQ==
+
 "@react-navigation/core@^3.5.1":
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/@react-navigation/core/-/core-3.5.1.tgz#7a2339fca3496979305fb3a8ab88c2ca8d8c214d"
