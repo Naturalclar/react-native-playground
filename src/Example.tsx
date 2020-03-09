@@ -9,7 +9,7 @@
  */
 
 import React from 'react';
-import {StyleSheet, ScrollView, View, Text, Linking} from 'react-native';
+import {StyleSheet, ScrollView, View, Text, Linking, Image} from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import {
   Header,
@@ -54,6 +54,11 @@ export const Example = () => {
           <Text style={styles.sectionDescription}>
             <ReloadInstructions />
           </Text>
+          <Image
+            source={{uri: 'https://www.github.com/Naturalclar.png'}}
+            height={50}
+            width={50}
+          />
         </View>
         <View style={styles.sectionContainer}>
           <Text style={styles.sectionTitle}>Debug</Text>
