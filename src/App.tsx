@@ -10,14 +10,12 @@
 
 import React from 'react';
 import {StatusBar} from 'react-native';
-
-import {Navigator} from './Navigation';
-
+import {TestModule} from './TestModule';
 const App = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
-      <Navigator />
+      <TestModule />
     </>
   );
 };
