@@ -9,8 +9,8 @@
  */
 
 import React from 'react';
-import {StyleSheet, ScrollView, View, Text, Linking, Image} from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import {StyleSheet, ScrollView, View, Text, Image} from 'react-native';
+
 import {
   Header,
   LearnMoreLinks,
@@ -18,8 +18,6 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-
-const repoUrl = 'https://github.com/Naturalclar/react-native-playground';
 
 export const Example = () => {
   const usingHermes =
@@ -39,15 +37,6 @@ export const Example = () => {
           <Text style={styles.sectionDescription}>
             Playground repository to try out different react-native repositories
           </Text>
-          <Icon.Button
-            name="github"
-            color="white"
-            backgroundColor="black"
-            onPress={() => {
-              Linking.openURL(repoUrl);
-            }}>
-            See on Github
-          </Icon.Button>
         </View>
         <View style={styles.sectionContainer}>
           <Text style={styles.sectionTitle}>See Your Changes</Text>

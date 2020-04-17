@@ -1,4 +1,7 @@
 {
   "name": "reactNativePlayground",
-  "displayName": "reactNativePlayground"
+  "displayName": "reactNativePlayground",
+  "expo": {
+    "platforms": ["web"]
+  }
 }

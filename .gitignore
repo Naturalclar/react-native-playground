@@ -62,3 +62,7 @@ buck-out/
 
 # CocoaPods
 /ios/Pods/
+
+# expo generated file
+.expo
+web-build
