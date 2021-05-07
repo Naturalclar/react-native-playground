@@ -82,6 +82,7 @@ export const LayoutAnimationList = () => {
         />
       )}
       data={albums}
+      keyExtractor={(item) => item.id}
       ListHeaderComponent={
         <ListHeader
           onPress={() => {
